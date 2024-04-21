@@ -1,0 +1,197 @@
+@charset "ISO-8859-1";
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+header {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 4.5rem;
+	background: white;
+	padding: 0.6rem;
+	border-bottom: 1px solid black;
+	position: fixed;
+	top: 0;
+	z-index: 10;
+}
+
+img {
+	height: 8.5rem;
+}
+
+ul {
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+}
+
+ul li:nth-child(odd) button {
+	padding: 0.6rem 1rem;
+	border-radius: 6px;
+	background-color: rgb(225, 50, 50);
+	border: none;
+	text-transform: uppercase;
+	color: white;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+button:hover {
+	background: #8f0000 !important;
+}
+
+section {
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: url("./assets/bg.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+
+article {
+	padding: 1rem;
+	height: 100%;
+	width: 100%;
+	background: #0000007e;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	font-size: 1.5rem;
+}
+
+h2 {
+	font-size: 3.5rem;
+}
+
+main {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: start;
+	gap: 0.3rem;
+}
+
+main button {
+	padding: 1rem 0.6rem;
+	text-transform: uppercase;
+	font-weight: bold;
+	border: none;
+	background: rgb(228, 58, 58);
+	color: white;
+	border-radius: 8px;
+	margin-top: 1rem;
+	cursor: pointer;
+}
+
+.forms-container {
+	position: absolute;
+	top: 0;
+	display: none;
+}
+
+.forms-container article {
+	background: transparent;
+	backdrop-filter: blur(2px);
+}
+
+form {
+	/* width: 30%; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 1rem;
+	background: white;
+	padding: 2rem;
+	border-radius: 8px;
+	color: black;
+	position: absolute;
+}
+
+form div {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: end;
+	gap: 1rem;
+}
+
+label {
+	font-size: 0.8rem;
+}
+
+input, select {
+	width: 100%;
+	height: 2rem;
+	padding: 0.4rem;
+	outline: none;
+}
+
+textarea {
+	padding: 0.3rem;
+	height: 5rem;
+	width: 100%;
+	outline: none;
+	border: none;
+	border-radius: 8px;
+	background: #eae9e9;
+}
+
+form input[type="submit"] {
+	padding: 0.5rem 1rem;
+	border: none;
+	text-transform: uppercase;
+	background: red;
+	color: white;
+	border-radius: 8px;
+	border: none;
+	text-decoration: none;
+	font-weight: bold;
+	color: white;
+	cursor: pointer;
+}
+
+form button {
+	border: none;
+}
+
+span {
+	font-size: 0.8rem;
+}
+
+span a {
+	color: black;
+	text-decoration: none;
+}
+
+span a:hover {
+	text-decoration: underline;
+}
+
+.close-btn {
+	height: 20px;
+	width: 20px;
+	border-radius: 50%;
+	background: red;
+	color: white;
+	cursor: pointer;
+	position: absolute;
+	top: 0.5rem;
+	right: 0.5rem;
+	font-weight: bold;
+}
